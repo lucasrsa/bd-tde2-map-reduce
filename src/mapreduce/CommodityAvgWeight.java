@@ -2,8 +2,6 @@ package mapreduce;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
-import org.apache.hadoop.io.FloatWritable;
-import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
@@ -14,10 +12,9 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.util.GenericOptionsParser;
 import org.apache.log4j.BasicConfigurator;
 
-import java.awt.*;
 import java.io.IOException;
 
-public class HighestTradeBrazil {
+public class CommodityAvgWeight {
 
     public static void main(String[] args) throws Exception {
         BasicConfigurator.configure();
@@ -34,7 +31,7 @@ public class HighestTradeBrazil {
         Job j = new Job(c, "wordcountcombiner-estudante");
 
         // Registrando classes
-        j.setJarByClass(HighestTradeBrazil.class);
+        j.setJarByClass(CommodityAvgWeight.class);
         j.setMapperClass(MapForCommodityCount.class);
 //        j.setCombinerClass(ReduceForCommodityCount.class);
         j.setReducerClass(ReduceForCommodityCount.class);
