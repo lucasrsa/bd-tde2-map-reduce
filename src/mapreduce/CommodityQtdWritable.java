@@ -29,7 +29,7 @@ public class CommodityQtdWritable implements Writable {
 
     public Float getQuantity() { return quantity; }
 
-    public void setQuantity(Float flow) { this.quantity = quantity; }
+    public void setQuantity(Float quantity) { this.quantity = quantity; }
 
     public CommodityQtdWritable() {
     }
