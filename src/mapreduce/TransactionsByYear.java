@@ -29,7 +29,7 @@ public class TransactionsByYear {
         Path output = new Path(files[1]);
 
         // criacao do job e seu nome
-        Job j = new Job(c, "wordcountcombiner-estudante");
+        Job j = new Job(c, "transactions-by-year");
 
         // Registrando classes
         j.setJarByClass(TransactionsByYear.class);

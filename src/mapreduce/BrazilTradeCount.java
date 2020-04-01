@@ -29,7 +29,7 @@ public class BrazilTradeCount {
         Path output = new Path(files[1]);
 
         // criacao do job e seu nome
-        Job j = new Job(c, "wordcountcombiner-estudante");
+        Job j = new Job(c, "brazil-trade-count");
 
         // Registrando classes
         j.setJarByClass(BrazilTradeCount.class);

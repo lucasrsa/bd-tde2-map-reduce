@@ -15,7 +15,7 @@ import org.apache.log4j.BasicConfigurator;
 
 import java.io.IOException;
 
-public class CommodityAvgWeight {
+public class CommodityAvgWeightBr {
 
     public static void main(String[] args) throws Exception {
         BasicConfigurator.configure();
@@ -29,10 +29,10 @@ public class CommodityAvgWeight {
         Path output = new Path(files[1]);
 
         // criacao do job e seu nome
-        Job j = new Job(c, "commodity-avg-weight");
+        Job j = new Job(c, "commodity-avg-weight-br");
 
         // Registrando classes
-        j.setJarByClass(CommodityAvgWeight.class);
+        j.setJarByClass(CommodityAvgWeightBr.class);
         j.setMapperClass(MapForCommodityWeight.class);
 //        j.setCombinerClass(ReduceForCommodityWeight.class);
         j.setReducerClass(ReduceForCommodityWeight.class);
@@ -61,7 +61,7 @@ public class CommodityAvgWeight {
                 final String commodity = value.toString().split(";")[3];
                 final String weight = value.toString().split(";")[6];
 
-                if (!weight.isEmpty()) {
+                if (country.compareTo("Brazil") == 0 && !weight.isEmpty()) {
 
                     con.write(new CommodityYearWritableComparable(commodity, year), new FloatWritable(Float.parseFloat(weight)));
 

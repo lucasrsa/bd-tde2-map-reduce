@@ -31,7 +31,7 @@ public class HighestTradeBrazil {
         Path output = new Path(files[1]);
 
         // criacao do job e seu nome
-        Job j = new Job(c, "wordcountcombiner-estudante");
+        Job j = new Job(c, "highest-trade-brazil");
 
         // Registrando classes
         j.setJarByClass(HighestTradeBrazil.class);
