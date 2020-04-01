@@ -17,6 +17,7 @@ import org.apache.log4j.BasicConfigurator;
 import java.awt.*;
 import java.io.IOException;
 
+// Questão 3
 public class HighestTradeBrazil {
 
     public static void main(String[] args) throws Exception {

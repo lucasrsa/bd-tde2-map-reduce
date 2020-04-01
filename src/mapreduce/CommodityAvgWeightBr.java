@@ -15,6 +15,7 @@ import org.apache.log4j.BasicConfigurator;
 
 import java.io.IOException;
 
+// Questão 5
 public class CommodityAvgWeightBr {
 
     public static void main(String[] args) throws Exception {

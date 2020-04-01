@@ -15,6 +15,7 @@ import org.apache.log4j.BasicConfigurator;
 
 import java.io.IOException;
 
+// Questão 2
 public class TransactionsByYear {
 
     public static void main(String[] args) throws Exception {

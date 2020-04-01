@@ -15,6 +15,7 @@ import org.apache.log4j.BasicConfigurator;
 
 import java.io.IOException;
 
+// Questão 6
 public class CommodityWeightPrice {
 
     public static void main(String[] args) throws Exception {
