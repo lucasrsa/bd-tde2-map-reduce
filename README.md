@@ -67,10 +67,10 @@
 
 7 - Quantidade de transações comerciais de acordo com o fluxo, de acordo com o ano;
 
-| Ano  | Mercadoria | Nº Transações |
-| ---- | ---------- | ------------- |
-| 2020 | a | 0 |
-| 2020 | a | 0 |
-| 2020 | a | 0 |
-| 2020 | a | 0 |
-| 2020 | a | 0 |
+| Ano  | Fluxo  | Nº Transações |
+| ---- | ------ | ------------- |
+| 1988 | Export | 12510         |
+| 1989 | Export | 26166         |
+| 1990 | Export | 29170         |
+| 1991 | Export | 32847         |
+| 1992 | Export | 45810         |
